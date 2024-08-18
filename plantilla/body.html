@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>TechCode</title>
+    <style>
+        * {
+            font-family: 'KoHo', sans-serif;
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            font-family: 'KoHo', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: #cccccc
+        }
+
+        #logo {
+            height: 3.4rem;
+            position: absolute;
+            top: 50%;
+            margin: -1.7rem 0 0 .8rem;
+            transition: .5s
+        }
+
+        header {
+            width: 100%;
+            height: 130px;
+            background: #fff;
+            position: sticky;
+            transition: all .5s;
+            top: 0;
+            z-index: 6;
+        }
+
+        .contenidodeinteres {
+            float: right;
+            width: 100%;
+            height: auto;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            font-size: 15px;
+            color: #555;
+            background: rgb(85, 85, 85);
+            text-align: center;
+            position: fixed;
+            padding: 3px 0 5px;
+            display: block;
+            width: 100%;
+            bottom: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        div.cuerpo_footer {
+            color: #fff;
+            text-align: center;
+            margin: 25px 1% 1% 50%;
+            position:relative;
+            font-size: 11px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="https://acortar.link/UCe50J" alt="logo">
+    </header>
+    <div class="contenidodeinteres">
+        <h1>Has recibido una notificación por parte de: {User} </h1>
+        <h2>Ticket #{Ticket}</h2>
+        <p>Fecha: {Fecha y Hora}</p>
+        <p>Estado: {Estado}</p>
+        <p>Mensaje:</p>
+        <p>{Subject}</p>
+    </div>
+    <footer class="page-footer font-small blue">
+
+        <div class="cuerpo_footer">
+            <p>© 2023 Copyright</p>
+        </div>
+
+    </footer>
+
+</body>
